@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "ShowData";
+    var name = TempData["Name"] != null ? TempData["Name"].ToString() : string.Empty;
+    var age = TempData["Age"] != null ? TempData["Age"].ToString() : string.Empty;
+    var address = TempData["Address"] != null ? TempData["Address"].ToString() : string.Empty;
+}
+
+<h2>ShowData</h2>
+<h3>@name</h3>
+<h3>@age</h3>
+<h3>@address</h3>
